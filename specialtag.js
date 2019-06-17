@@ -2,7 +2,7 @@
     var MyCustomButton = function( props ) {
         return wp.element.createElement(
             wp.editor.RichTextToolbarButton, {
-                icon: 'editor-code',
+                icon: 'image-flip-horizontal',
                 title: 'Special tag',
                 onClick: function() {
                     props.onChange( wp.richText.toggleFormat(
