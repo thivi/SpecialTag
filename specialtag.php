@@ -20,3 +20,7 @@ function my_custom_format_enqueue_assets_editor() {
 }
 add_action( 'enqueue_block_editor_assets', 'my_custom_format_enqueue_assets_editor' );
 
+function specialTagCSS(){
+    wp_enqueue_style("special-tag-css",plugins_url("SpecialTag/specialtag.css"),array(),'1.0.0','all');
+}
+add_action( 'wp_enqueue_scripts', 'specialTagCSS' );
