@@ -7,7 +7,7 @@ function my_custom_format_script_register() {
     wp_register_script(
         'special-tag-js',
         plugins_url( 'specialtag.js', __FILE__ ),
-        array( 'wp-rich-text' )
+        array( 'wp-rich-text','wp-editor','wp-element' )
     );
 }
 add_action( 'init', 'my_custom_format_script_register' );
