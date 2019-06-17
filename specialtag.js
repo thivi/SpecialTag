@@ -3,7 +3,7 @@
         return wp.element.createElement(
             wp.editor.RichTextToolbarButton, {
                 icon: 'editor-code',
-                title: 'Special Tag',
+                title: 'Special tag',
                 onClick: function() {
                     props.onChange( wp.richText.toggleFormat(
                         props.value,
