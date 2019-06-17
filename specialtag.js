@@ -1,8 +1,8 @@
 ( function( wp ) {
-    var MyCustomButton = function( props ) {
+    var SpecialTagButton = function( props ) {
         return wp.element.createElement(
             wp.editor.RichTextToolbarButton, {
-                icon: 'dashicons-image-flip-horizontal',
+                icon: 'image-flip-horizontal',
                 title: 'Special Tag',
                 onClick: function() {
                     props.onChange( wp.richText.toggleFormat(
@@ -19,7 +19,7 @@
             title: 'Special Tag',
             tagName: 'span',
             className: 'special-tag',
-            edit: MyCustomButton,
+            edit: SpecialTagButton,
         }
     );
 } )( window.wp );

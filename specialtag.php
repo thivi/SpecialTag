@@ -1,6 +1,8 @@
 <?php
 /**
  * Plugin Name: Special Tag
+ * Author: Theviyanthan K.
+ * Author URI: http://www.thearmchaircritic.org
  */
  
 function my_custom_format_script_register() {
