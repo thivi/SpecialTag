@@ -2,7 +2,7 @@
     var MyCustomButton = function( props ) {
         return wp.element.createElement(
             wp.editor.RichTextToolbarButton, {
-                icon: 'dashicons-admin-comments',
+                icon: '',
                 title: 'Special Tag',
                 onClick: function() {
                     props.onChange( wp.richText.toggleFormat(
