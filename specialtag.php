@@ -16,3 +16,5 @@ function my_custom_format_enqueue_assets_editor() {
     wp_enqueue_script( 'special-tag-js' );
     wp_enqueue_style("special-tag-css",plugins_url("SpecialTag/specialtag.css"),array(),'1.0.0','all');
 }
+add_action( 'enqueue_block_editor_assets', 'my_custom_format_enqueue_assets_editor' );
+
